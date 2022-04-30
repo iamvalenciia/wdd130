@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+
+nav {
+  background-color: steelblue;
+  padding: 15px;
+}
+
+a {
+color: #e0e1dd;
+margin: 40px;
+
+}
+h1 {
+color: steelblue;
+}
