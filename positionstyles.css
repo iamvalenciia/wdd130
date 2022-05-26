@@ -192,7 +192,8 @@
   grid-area: 5/1/7/3;
   width: 200px; 
   height: 200px; 
-  background-color: green; 
+  background-color: green;
+  z-index: 1; 
 } 
 .yellow6 {
   grid-area: 3/5/7/7;
