@@ -16,7 +16,7 @@ Fonts are separated by a | */
   --paragraph-font: font-family: 'Roboto', sans-serif, 'Roboto Mono', monospace, 'Roboto Slab', serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #778da9;  /* headlines on a white background */ 
+  --headline-color-on-white: black;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #ffb703; /* paragraph text on a white background */ 
   --paragraph-color-on-color: black; /* paragraph text on a colored background */ 
