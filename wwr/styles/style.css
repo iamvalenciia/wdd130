@@ -245,6 +245,7 @@ main section img {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+    
 }
   
 .card-img, .mountains {
@@ -258,6 +259,64 @@ main section img {
     height: 100%;
     box-shadow: 5px 5px 10px black;
 }
+
+/*---------*/
+/*   FAQ   */
+/*---------*/
+
+.story {
+    grid-column: 2/-2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #778da9;
+    color: #fff;
+}
+
+.story summary {
+    grid-column: 1/5;
+    grid-row: 1;
+    padding: 1em;
+    background-color: #ffb703;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+.story h3 {
+    grid-column: 2/5;
+}
+.story p {
+    grid-column: 1/5;
+    padding: .5em 2em;
+    
+}
+.story cite {
+    grid-column: 2/6;
+    font-size: .74em;
+}
+.story a {
+    text-decoration: none;
+    color: inherit;
+}
+.story a:hover {
+     background-color: #fff;
+     color: #778da9;
+
+}
+
+.hero-img-faq {
+    width: 100%; 
+    content: center;
+    margin-bottom: 30px;
+    opacity: 0.8;
+    
+}
+
+.content-faq {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
