@@ -281,35 +281,18 @@ main section img {
     background-color: #ffb703;
     color: #fff;
     font-size: 1.25em;
+    font-family: 'Roboto', sans-serif, 'Roboto Mono', monospace, 'Roboto Slab', serif;
 }
 
-.story h3 {
-    grid-column: 2/5;
-}
 .story p {
     grid-column: 1/5;
     padding: .5em 2em;
     
 }
-.story cite {
-    grid-column: 2/6;
-    font-size: .74em;
-}
-.story a {
-    text-decoration: none;
-    color: inherit;
-}
-.story a:hover {
-     background-color: #fff;
-     color: #778da9;
-
-}
 
 .hero-img-faq {
     width: 100%; 
-    content: center;
     margin-bottom: 30px;
-    
 }
 
 .content-faq {
