@@ -9,13 +9,6 @@ font-family: 'Roboto Mono', monospace;
 font-family: 'Roboto Slab', serif;
 */
 
-/* .home-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 0.3fr 0.3fr 0.2fr 1fr 0.2fr 0.3fr 0.3fr;
-} */
-
-
 main {
     display: grid;
     grid-template-columns: repeat(10, 1fr);

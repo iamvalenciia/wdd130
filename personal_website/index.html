@@ -10,63 +10,120 @@
 </head>
 
 <body>
-    <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="algorithm 152 logo">
-        </a>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="howorks.html">HOW WORKS?</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
-    </header>
-    <div id="banner">
-        <div id="banner-box">
-            <img id="banner-img" src="images/home-page-banner.jpg" alt="banner of website">
-        </div>
-    </div>
-    <main>
-        <section class="message">
-            <h2>Why is important to know the algorithm of social networks?</h2>
-            <p>If you want to grow in your business, is important to know how
-                social networks work, with the purpose to get better incomes.
-                The algorithms of each social network are designed to keep the
-                people inside of their website and consume the content of their
-                creators, sometimes this is bad because you tend to lose a lot
-                of time inside of these websites, and sometimes is good because
-                you can learn different things about any topic. So, let’s go to
-                make a better place inside of this social media, one of the best
-                ways to grow inside of any social network is by uploading original
-                and valuable content, which means the people can use your content
-                to resolve a problem, to get knowledge, or to help in some issue.
-                No matter if you are noob editing videos or if you don’t have a
-                good camera, people will recognize the value of your content.</p>
-        </section>
-        <div class="container_images">
-            <div class="wrapper">
-                <img class="img_main" src="images/home-page-phone.jpg" alt="photo of phone with apps">
-                <img class="img_main" src="images/home-yellow.jpg" alt="photo girl with yellow coat">
-                <img class="img_main" src="images/home-black.jpg" alt="photo girl in _blank and white">
-                <img class="img_main" src="images/home-red.jpg" alt="photo of girl with a red coat">
+    <div id="content">
+        <header>
+            <div class="rectangle"></div>
+            <nav>
+                <div class="leftnav">
+                    <a href="index.html">Home</a>
+                    <a href="howorks.html">How Works?</a>
+                </div>
+                <div class="centernav">
+                    <a id="logo_link" href="index.html">
+                        <img class="logo" src="images/logo.png" alt="algorithm 152 logo">
+                    </a>
+                </div>
+                <div class="rightnav">
+                    <a href="faq.html">FAQ</a>
+                    <a href="contactus.html">Contact Us</a>
+                </div>
+            </nav>
+        </header>
+        <div id="banner">
+            <div id="banner-box">
+                <img id="banner-img" src="images/home-page-banner.jpg" alt="banner of website">
             </div>
         </div>
-    </main>
-    <footer>
-        <img class="logo" src="images/logo.png" alt="algorithm 152 logo" width="150" height="150">
-        <h3>Algorithm 152 &copy; 2022 - Valencia Juan</h3>
-        <h3><a href="site-plan.html">Site Plan</a></h3>
-        <div class="social">
-            <a href="https://youtube.com" target="_blank">
-                <img class="social-media" src="images/youtube.png" alt="youtube icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img class="social-media" src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://github.com/" target="_blank">
-                <img class="social-media" src="images/github.png" alt="github icon">
-            </a>
-        </div>
-    </footer>
+        <main class="home-grid">
+            <div class="main-grid">
+                <section class="message">
+                    <h2>Why is important to know the algorithm of social networks?</h2>
+                    <p>If you want to grow in your business, is important to know how
+                        social networks work, with the purpose to get better incomes.
+                        The algorithms of each social network are designed to keep the
+                        people inside of their website and consume the content of their
+                        creators, sometimes this is bad because you tend to lose a lot
+                        of time inside of these websites, and sometimes is good because
+                        you can learn different things about any topic. So, let’s go to
+                        make a better place inside of this social media, one of the best
+                        ways to grow inside of any social network is by uploading original
+                        and valuable content, which means the people can use your content
+                        to resolve a problem, to get knowledge, or to help in some issue.
+                        No matter if you are noob editing videos or if you don’t have a
+                        good camera, people will recognize the value of your content.</p>
+                </section>
+                <div>
+                    <div class="carousel">
+                    <ul class="slides">
+                        <input type="radio" name="radio-buttons" id="img-1" checked />
+                        <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="images/home-yellow.jpg" alt="photo girl with yellow coat">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-3" class="prev-slide">
+                            <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-2" class="next-slide">
+                            <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-2" />
+                        <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="images/home-black.jpg" alt="photo girl in black and white">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-1" class="prev-slide">
+                            <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-3" class="next-slide">
+                            <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-3" />
+                        <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="images/home-red.jpg" alt="photo of girl with a red coat">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-2" class="prev-slide">
+                            <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-1" class="next-slide">
+                            <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                        </li>
+                        <div class="carousel-dots">
+                        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        </div>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img class="logo" src="images/logo.png" alt="algorithm 152 logo" width="150" height="150">
+            <h3>Algorithm 152 &copy; 2022 - Valencia Juan</h3>
+            <h3><a href="site-plan.html">Site Plan</a></h3>
+            <div class="social">
+                <a href="https://youtube.com" target="_blank">
+                    <img class="social-media" src="images/youtube.png" alt="youtube icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="social-media" src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://github.com/" target="_blank">
+                    <img class="social-media" src="images/github.png" alt="github icon">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
