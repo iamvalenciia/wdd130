@@ -24,7 +24,7 @@ Fonts are separated by a | */
   /* paragraph text on a white background */
   --paragraph-color-on-color: white;
   /* paragraph text on a colored background */
-  --paragraph-background-color: #396E94;
+  --paragraph-background-color: #A8DADC;
   --nav-link-color: white;
   --nav-background-color: black;
   --nav-hover-link-color: white;
@@ -71,7 +71,7 @@ header {
   padding: 1em;
   text-align: center;
   color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+  background-color: var(--nav-background-color);
 }
 
 header>h1,
@@ -119,7 +119,7 @@ p {
 
 p.colored {
   background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
+  color: black;
 }
 
 nav {
@@ -149,8 +149,10 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: white;
+  text-decoration-line: underline;
+  text-decoration-color: #E63946;
+  text-underline-offset: 1rem;
 }
 
 .sitemap {

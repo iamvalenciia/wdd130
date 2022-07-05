@@ -112,7 +112,7 @@ nav a {
 nav a:hover {
     color: white;
     text-decoration-line: underline;
-    text-decoration-color: var(--nav-hover-background-color);
+    text-decoration-color: #E63946;
     text-underline-offset: 1rem;
 }
 
@@ -122,7 +122,7 @@ nav a:hover {
     grid-row: 2;
     max-width: 100%;
     height: 50px;
-    background-color: #105F9E;
+    background-color: #457B9D;
 }
 
 .logo {
@@ -140,6 +140,11 @@ nav a:hover {
     margin: 0 auto;
     padding: 0 1em;
     max-width: 100%;
+}
+h2 {
+    background-color: #A8DADC;
+    padding: 20px;
+    color: black;
 }
 
 .message {
@@ -172,7 +177,7 @@ nav a:hover {
     margin-top: 70px;
 }
 
-ul.slides {
+.slides {
     display: block;
     position: relative;
     height: 600px;
@@ -191,7 +196,7 @@ ul.slides {
     -webkit-touch-callout: none;
 }
 
-ul.slides input {
+.slides input {
     display: none;
 }
 
@@ -304,7 +309,7 @@ input:checked+.slide-container .nav label {
 /*-----------------------------------------*/
 
 footer {
-    background-color: #105F9E;
+    background-color: #457B9D;
     padding: 25px 50px;
     margin: 200px 0 0 0;
     display: flex;
