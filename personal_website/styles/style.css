@@ -308,6 +308,7 @@ input:checked+.slide-container .nav label {
 /*             footer                      */
 /*-----------------------------------------*/
 
+
 footer {
     background-color: #457B9D;
     padding: 25px 50px;
@@ -339,6 +340,46 @@ footer a {
     text-decoration-line: underline;
     text-decoration-color: white;
     text-underline-offset: 1rem;
+}
+
+
+/*-----------------------------------------*/
+/*            How works?                   */
+/*-----------------------------------------*/
+
+#h1_title {
+    display: grid;
+    text-align: center;
+    font-family: var(--heading-font);
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.grid_title_h1 {
+    grid-area: auto /2/ auto/3;
+    padding: 35px;
+    background-color:var(--accent1-color);
+    color: black;
+
+}
+
+
+#grid-works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.image_instagram {
+    display: grid;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    
+}
+
+.instagram_section {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 3;
+    justify-content: center;
 }
 
 
