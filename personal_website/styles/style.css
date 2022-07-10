@@ -346,6 +346,11 @@ footer a {
 /*-----------------------------------------*/
 /*            How works?                   */
 /*-----------------------------------------*/
+#content {
+    width: 1600px;
+    margin: auto;
+    background-color: var(--color-white);
+}
 
 #h1_title {
     display: grid;
@@ -366,6 +371,7 @@ footer a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 1em;
 }
