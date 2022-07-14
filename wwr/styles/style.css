@@ -268,16 +268,6 @@ main section img {
     margin: .5em;
 }
 
-/* .story summary {
-    grid-column: 1/5;
-    grid-row: 1;
-    padding: 1em;
-    background-color: #ffb703;
-    color: #fff;
-    font-size: 1.25em;
-    font-family: 'Roboto', sans-serif, 'Roboto Mono', monospace, 'Roboto Slab', serif;
-} */
-
 summary {
     color:           var(--color-white);
     overflow:        hidden;
