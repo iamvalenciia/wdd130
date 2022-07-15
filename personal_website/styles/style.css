@@ -591,6 +591,9 @@ details[open] summary::after {
     footer {
         margin-top: 25px;
     }
+    .slides {
+        height: 500px;
+    }
 
     /*------------------- main how works----------------------*/
     #grid-works {
