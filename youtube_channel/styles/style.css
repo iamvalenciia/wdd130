@@ -127,12 +127,12 @@ nav a:hover {
     grid-row: 2;
     max-width: 100%;
     height: 50px;
-    background-color: #457B9D;
+    background-color: #105F9E;
 }
 
 .logo {
     position: relative;
-    z-index: 9;
+    z-index: 0;
 }
 
 /*-----------------------------------------*/
@@ -210,7 +210,7 @@ h2 {
 
 
 footer {
-    background-color: #457B9D;
+    background-color: #105F9E;
     padding: 25px 50px;
     margin: 200px 0 0 0;
     display: flex;
@@ -244,8 +244,47 @@ footer a {
 
 
 /*-----------------------------------------*/
-/*            How works?                   */
+/*          Publicacione                   */
 /*-----------------------------------------*/
+
+.sidenav {
+    font-family: var(--heading-font);
+    height: 50%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+  
+.sidenav a {
+    padding: 8px 8px 40px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #E63946;
+    text-underline-offset: 1rem;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+} 
+
 
 #h1_title {
     display: grid;
@@ -256,77 +295,35 @@ footer a {
 
 .grid_title_h1 {
     grid-area: auto /2/ auto/3;
-    padding: 35px;
-    background-color: var(--accent1-color);
-    color: black;
+    padding: 0;
+    color: white;
+    text-align: left;
+    line-height: 0.1rem;
+    margin: 20px;
 }
 
-#grid-works {
+#grid_publi_detalla {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
-    max-width: 1600px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 0;
+    text-align: left;
 }
 
-.card_img {
-    border: 5px solid var(--primary-color);
-    box-shadow: 5px 5px 10px var(--primary-color);
+.image_section {
+    height: 50%;
+    width: 50%;
 }
 
-.title_h3 {
-    background-color: var(--primary-color);
-    margin-bottom: 0;
-    border: 5px solid var(--primary-color);
-}
-
-.image_instagram {
+.paragraph_section {
     display: grid;
-    grid-area: 1 / 1 / 2 / 2;
-    justify-content: center;
-    padding: 40px;
-}
-
-.instagram_section {
-    display: grid;
-    grid-area: 1 / 2 / 2 / 3;
+    grid-column: 2;
+    grid-row: 1;
     padding: 25px;
     text-align: justify;
 }
 
-.youtube_section {
-    display: grid;
-    grid-row: 2/3;
-    grid-column: 2/3;
-    padding: 25px;
-    text-align: justify;
-}
-
-.image_youtube {
-    display: grid;
-    grid-row: 2 /3;
-    grid-column: 1 / 2;
-    justify-content: center;
-    padding: 40px;
-}
-
-.image_tiktok {
-    display: grid;
-    grid-row: 3/4;
-    grid-column: 1/2;
-    padding: 40px;
-    justify-content: center;
-}
-
-.tiktok_section {
-    display: grid;
-    grid-row: 3/4;
-    grid-column: 2/3;
-    padding: 25px;
-    text-align: justify;
-}
 
 
 /*-----------------------------------------*/
@@ -419,10 +416,14 @@ details[open] summary::after {
 
 @media (max-width: 40em) {
 
+    #grid_publi_detalla {
+        padding: 0.1em;
+        grid-template-columns: 0;
+    }
     .main-grid {
         display: block;
         gap:0 ;
-        padding: 0 1em;
+        padding: 0 20px;
     }
 
     header,
@@ -481,6 +482,17 @@ details[open] summary::after {
     /*------------------- main how works----------------------*/
     #grid-works {
         display: block;
+    }
+    .grid_title_h1 {
+        line-height: normal;
+    }
+    #h1_title {
+        margin-top: 30px;
+    }
+
+    .image_section {
+        height: 75%;
+        width: 75%;
     }
 
 }

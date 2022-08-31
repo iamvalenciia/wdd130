@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <div>
-        <header id="opacity_java1">
+    <div id="content">
+        <header>
             <nav>
                 <div class="leftnav">
                     <a href="index.html">Inicio</a>
@@ -32,27 +32,16 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="free_articles.html">Publicaciones</a>
-            <a href="publi_insta.html">Instagram</a>
-            <a href="publi_youtube.html">Youtube</a>
-            <a href="publi_tiktok.html">Tiktok</a>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+            <a href="#">Tiktok</a>
         </div>
         <span style="font-size:30px;cursor:pointer;font-family: var(--heading-font);" onclick="openNav()">&#9776; Abrir</span>
         <div id="h1_title">
             <h1 class="grid_title_h1">Publicaciones Detalldas</h1>
-            <h6 class="grid_title_h1">31 de Agosto del 2022</h6>
         </div>
         <main>
-            <div id="grid_publi_detalla">
-                <section class="paragraph_section">
-                    <div class="image_section">
-                        <img src="images/rsz_publicacion_detalladav2.jpg" alt="imagen de periodico digital">
-                    </div>
-                    <p><b><em>Los videos</em></b> de <span class="minute_background">1 minutos</span> tienen consejos para crecer en las redes sociales, pero un minuto
-                        no es suficiente para cubrir todo el tema. Sin embargo, Las "Publicaciones Detalladas" 
-                        incluirán <span class="minute_background">ejemplos, razones, causas y consecuencias,</span> con esta información usted deberían ser
-                        capaz de aplicar los consejos de una manera personalizada.</p>
-                </section>
-            </div>
+            
         </main>
         <footer>
             <img class="logo" src="images/logo.png" alt="algorithm 152 logo" width="150" height="150">
@@ -72,17 +61,13 @@
         </footer>
     </div>
 <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("mySidenav").style.opacity = "1";
-    document.header.style.opacity = "0.5";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("mySidenav").style.opacity = "1";
-    document.header.style.opacity = "1";
-}
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
 </script>
 </body>
 </html>
