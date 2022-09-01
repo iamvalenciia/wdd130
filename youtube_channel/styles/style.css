@@ -61,7 +61,7 @@ img {
 
 #content {
     max-width: 1600px;
-    margin: auto;
+    margin-left: auto;
     background-color: var(--color-white);
 }
 
@@ -140,7 +140,9 @@ nav a:hover {
     z-index: 0;
     background: #FFFFFF;
     padding: 0;
-    border-radius: 30px;
+    /* border-radius: 75px; */
+    height: 100px;
+    width: 100px;
 
 }
 
@@ -220,8 +222,8 @@ h2 {
 
 footer {
     background-color: #105F9E;
-    padding: 25px 50px;
-    margin: 200px 0 0 0;
+    margin: 100px 0 0 0;
+    padding: 15px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -431,15 +433,16 @@ details[open] summary::after {
     text-align: center;
     font-family: var(--heading-font);
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
 }
 
 .suscriptores_title {
     grid-column: 2;
     grid-row: 1;
-    padding: 10px;
     color: white;
     text-align: left;
+    display: block;
+
 }
 
 .suscriptores_comments {
@@ -466,6 +469,7 @@ table {
 
 table.scrolldown {
     width: 300px;
+
       
     /* border-collapse: collapse; */
     border-spacing: 0;
@@ -485,7 +489,7 @@ thead tr th {
 table.scrolldown tbody {
               
     /* Set the height of table body */
-    height: 200px;
+    height: 400px;
       
     /* Set vertical scroll */
     overflow-y: auto;
@@ -500,7 +504,7 @@ tbody {
 
 td {
     text-align: left;
-    padding: 8px 20px;
+    padding: 0px 5px 20px 5px;
 }
 
 th {
@@ -513,6 +517,86 @@ th {
     width: 36;
     border-radius: 25px;
 }
+
+.headlines_table {
+    background-color: #E63946;
+    color: white;
+}
+
+/*-----------------------------------------*/
+/*       MUCHAS GRACIAS LETRERO            */
+/*-----------------------------------------*/
+
+
+.container_gracias  {
+    grid-column: 2;
+    grid-row: 3;
+    display: block;
+    margin-top: 50px;
+    max-width: 570px;
+    align-items: center;
+}
+
+.card {
+    background: transparent;
+    border: 10px solid #E63946;
+    box-shadow: inset 0 0 1vw #E63946, 0 0 1vw #E63946, inset 0 0 1vw #E63946, 0 0 1vw #E63946, 0 0 .1vw #E63946;
+    border-radius: .5625rem;
+    padding: 30px;
+
+}
+.diner {
+    font-size: 72px;
+    font-family: var(--heading-font);
+    display: block;
+    color: transparent;
+    paint-order: fill stroke markers;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #fed128;
+    text-shadow: 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 0.4vw #fed128;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.faulty-letter {
+    -webkit-text-stroke-color: #444444;
+    text-shadow: 0 0 1vw #222222, 0 0 1vw #222222, 0 0 1vw #222222, 0 0 0.2vw #444444;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: 9999;
+}
+
+.welcome {
+    display: block;
+    color: #28d7fe;
+    font-size: 40px;
+    font-family: var(--heading-font);
+    text-shadow: 0 0 3vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff, 0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe;
+    font-weight: normal;
+}
+
+@keyframes blink {
+    from,
+    38%,
+    43.25%,
+    49.5%,
+    51.125%,
+    to {
+      -webkit-text-stroke-color: #444444;
+    text-shadow: 0 0 1vw #222222, 0 0 1vw #222222, 0 0 1vw #222222, 0 0 0.2vw #444444;
+    }
+  
+    38.5%,
+    43%,
+    50%,
+    51% {
+      -webkit-text-stroke-color: #fed128;
+    text-shadow: 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 0.4vw #fed128;
+    }
+}
+
+
+
 
 
 @media (max-width: 40em) {
@@ -601,4 +685,13 @@ th {
         display: block;
     }
 
+    .container_gracias {
+        margin-top: 20px;
+        display: block;
+
+    }
+    .diner {
+        display: block;
+        font-size: 40px;   
+    }
 }
