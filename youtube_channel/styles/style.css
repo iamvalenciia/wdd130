@@ -259,43 +259,6 @@ footer a {
 /*          Publicacione                   */
 /*-----------------------------------------*/
 
-.sidenav {
-    font-family: var(--heading-font);
-    height: 50%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-
-}
-  
-.sidenav a {
-    padding: 8px 8px 40px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-  
-.sidenav a:hover {
-    text-decoration-line: underline;
-    text-decoration-color: #E63946;
-    text-underline-offset: 1rem;
-}
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 36px;
-    margin-left: 50px;
-} 
 
 
 #h1_title {
@@ -303,6 +266,7 @@ footer a {
     text-align: center;
     font-family: var(--heading-font);
     grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 20px;
 }
 
 .grid_title_h1 {
