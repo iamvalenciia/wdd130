@@ -358,7 +358,7 @@ summary {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: var(--secondary-color);
+    background: #105F9E;
     font-weight: bold;
     cursor: pointer;
 }
@@ -463,8 +463,8 @@ table {
     border-spacing: 0;
     width: 100%;
     border: 1px solid #fff;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
 }
 
 table.scrolldown {
